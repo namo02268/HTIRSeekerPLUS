@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.0">
+    <PolyGroup Name="HTIRSeekerPLUS" BlockFamily="Sensor">
+      <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.4" />
+			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_HTIRSeeker_Direction.png" ValueDisplay="Identification_Direction.xml" Configuration="Identification_Direction.xml" ModeCanSpecifyProperties="True" />
+			<Parameter Name="Strength" Direction="Output" DataType="Single" Identification="Identification_HTIRSeeker_Strength.png" />
+      <Parameter Name="Threshold" Identification="Identification_Threshold_HTIRSeekerPLUS.xml" DataType="Single" Direction="Input" DefaultValue="128" MinValue="0" MaxValue="255" />
+      <Parameter Name="Result" CompilerDirectives="Result" Identification="Identification_Result.png" DataType="Boolean" Direction="Output"/>
+      <Parameter Name="Comparison" Direction="Input" Configuration="Identification_ComparisonType.xml" Identification="Identification_ComparisonType.xml" DataType="Int32" DefaultValue="4" />
+
+      <Hardware>
+				<NXTPlotColor>#ffffab34</NXTPlotColor>
+				<EV3PlotColor>#ffd46800</EV3PlotColor>
+				<EV3AutoID>52</EV3AutoID>
+				<Direction>Input</Direction>
+				<DefaultPort>1.4</DefaultPort>
+			</Hardware>
+
+      <Category Name="MeasureACMode">
+        <Block>
+          <Mode>MeasureACDirection</Mode>
+          <Reference Type="VILib" Name="MeasureACDirection.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Direction" CompilerDirectives="Result"/>
+          <PaletteInfo Weight="0.5" />
+          <BlockInterface>Selector</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+        <Block>
+          <Mode>MeasureACStrength</Mode>
+          <Reference Type="VILib" Name="MeasureACStrength.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Strength" />
+          <BlockInterface>Measure</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+      </Category>
+
+      <Category Name="MeasureDCMode">
+        <Block>
+          <Mode>MeasureDCDirection</Mode>
+          <Reference Type="VILib" Name="MeasureDCDirection.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Direction" CompilerDirectives="Result"/>
+          <BlockInterface>Selector</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+        <Block>
+          <Mode>MeasureDCStrength</Mode>
+          <Reference Type="VILib" Name="MeasureDCStrength.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Strength" />
+          <BlockInterface>Measure</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+      </Category>
+
+      <Category Name="CompareACMode">
+        <Block>
+          <Mode>CompareACStrength</Mode>
+          <Reference Type="VILib" Name="CompareACStrength.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Comparison" />
+          <ParameterReference Name="Threshold" />
+          <ParameterReference Name="Result" />
+          <ParameterReference Name="Strength" />
+          <BlockInterface>Compare</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+      </Category>
+
+      <Category Name="CompareDCMode">
+        <Block>
+          <Mode>CompareDCStrength</Mode>
+          <Reference Type="VILib" Name="CompareDCStrength.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Comparison" />
+          <ParameterReference Name="Threshold" />
+          <ParameterReference Name="Result" />
+          <ParameterReference Name="Strength" />
+          <BlockInterface>Compare</BlockInterface>
+          <Flags>PBROnly</Flags>
+          <Hardware></Hardware>
+        </Block>
+      </Category>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

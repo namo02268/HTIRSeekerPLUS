@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="HTIRSeekerPLUS">
+    <PolyGroup Name="HTIRSeekerPLUS" DisplayName="HTIRSeeker PLUS">
+      <Description><![CDATA[<p>Context help for PolyGroup <b>Third party test</b></p>]]></Description>
+      <Parameter Name="Port" DisplayName="ポート" Link="page.html?Path=editor%2FPortSelector.html#Port">
+        <Description><![CDATA[多くのプログラミング ブロックでは、 EV3ブロックのポート（A、B、C、D、1、2、3、および4）を選択する必要があります。ポート セレクターはこれらのブロックの最上部右隅にあります。]]></Description>
+      </Parameter>
+      <Parameter Name="Direction" DisplayName="方向">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>備考:</b> 赤外線の方向</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Strength" DisplayName="明るさ">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>備考:</b> 赤外線の明るさ</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Comparison" DisplayName="比較タイプ">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 5<br/><b>備考:</b> 0:= (～と等しい)<br/>1:≠ (～と等しくありません)<br/>2:&gt; (～超過)<br/>3: ≥ (～以上)<br/>4:&lt; (～未満)<br/>5:≤ (～以下)</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Threshold" DisplayName="しきい値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 任意の数<br/><b>備考:</b> センサー データと比較する値</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Result" DisplayName="比較結果">
+        <Description><![CDATA[<p><b>タイプ:</b> ロジック<br/><b>備考:</b> 比較モードの真/偽の結果です。</p>]]></Description>
+      </Parameter>
+
+      <Category Name="MeasureACMode" DisplayName="ACモード">
+        <Block Mode="MeasureACDirection" DisplayName="方向">
+          <Description><![CDATA[「測定 - AC - 方向」モードは、RCJサッカーの赤外線ボール（Aモード）の信号方向を検出し、その結果を出力します。]]></Description>
+        </Block>
+        <Block Mode="MeasureACStrength" DisplayName="明るさ">
+          <Description><![CDATA[「測定 - AC - 明るさ」モードは、RCJサッカーの赤外線ボール（Aモード）の信号の強さを検出し、その結果を出力します。]]></Description>
+        </Block>
+      </Category>
+      <Category Name="MeasureDCMode" DisplayName="DCモード">
+        <Block Mode="MeasureDCDirection" DisplayName="方向">
+          <Description><![CDATA[「測定 - DC - 方向」モードは、RCJサッカーの赤外線ボール（Bモード）の信号方向を検出し、その結果を出力します。]]></Description>
+        </Block>
+        <Block Mode="MeasureDCStrength" DisplayName="明るさ">
+          <Description><![CDATA[「測定 - DC - 明るさ」モードは、RCJサッカーの赤外線ボール（Bモード）の信号の強さを検出し、その結果を出力します。]]></Description>
+        </Block>
+      </Category>
+      <Category Name="CompareACMode" DisplayName="ACモード">
+        <Block Mode="CompareACStrength" DisplayName="明るさ">
+          <Description><![CDATA[「比較 - AC - 明るさ」モードでは、検出下の赤外線の強さを選択した比較タイプを用いてしきい値と比較します。真/偽の結果が比較結果に出力されます。]]></Description>
+        </Block>
+      </Category>
+      <Category Name="CompareDCMode" DisplayName="DCモード">
+        <Block Mode="CompareDCStrength" DisplayName="明るさ">
+          <Description><![CDATA[「比較 - DC - 明るさ」モードでは、検出下の赤外線の強さを選択した比較タイプを用いてしきい値と比較します。真/偽の結果が比較結果に出力されます。]]></Description>
+        </Block>
+      </Category>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>
