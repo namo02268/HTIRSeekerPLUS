@@ -3,8 +3,8 @@
   <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.0">
     <PolyGroup Name="HTIRSeekerPLUS" BlockFamily="Sensor">
       <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.4" />
-			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_HTIRSeeker_Direction.png" ValueDisplay="Identification_Direction.xml" Configuration="Identification_Direction.xml" ModeCanSpecifyProperties="True" />
-			<Parameter Name="Strength" Direction="Output" DataType="Single" Identification="Identification_HTIRSeeker_Strength.png" />
+			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_HTIRSeekerPLUS_Direction.png" ValueDisplay="Identification_Direction.xml" Configuration="Identification_Direction.xml" ModeCanSpecifyProperties="True" />
+			<Parameter Name="Strength" Direction="Output" DataType="Single" Identification="Identification_HTIRSeekerPLUS_Strength.png" />
       <Parameter Name="Threshold" Identification="Identification_Threshold_HTIRSeekerPLUS.xml" DataType="Single" Direction="Input" DefaultValue="128" MinValue="0" MaxValue="255" />
       <Parameter Name="Result" CompilerDirectives="Result" Identification="Identification_Result.png" DataType="Boolean" Direction="Output"/>
       <Parameter Name="Comparison" Direction="Input" Configuration="Identification_ComparisonType.xml" Identification="Identification_ComparisonType.xml" DataType="Int32" DefaultValue="4" />

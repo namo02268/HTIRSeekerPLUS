@@ -51,14 +51,15 @@ The result is returned as TRUE or FALSE, and can also be used in Switch, Loop, a
 ![Compare_Strength_Switch](./images/README_Compare_Strength_Wait.jpg)
 
 
-## インストール方法
+## インストール方法 (Installation)
 - [Releases ページ](https://github.com/namo02268/HTIRSeekerPLUS/releases)より 「HTIRSeekerPLUS.ev3b」 をダウンロード
 - EV3ソフトウェアを起動し、[ツール] > [ブロック インポート] を開く
 - ダウンロードした .ev3b ファイルを読み込む
 - EV3ソフトウェアを再起動
 - 追加されたブロックをプログラムにドラッグ＆ドロップして使用
 
-## Installation
+---
+
 - Download the "HTIRSeekerPLUS.ev3b" file from the [Releases page]((https://github.com/namo02268/HTIRSeekerPLUS/releases)).
 - Launch the EV3 software and open [Tools] > [Block Import].
 - Import the downloaded .ev3b file.
