@@ -2,7 +2,7 @@
 <EditorStrings>
   <PolyGroups ModuleName="HTIRSeekerPLUS">
     <PolyGroup Name="HTIRSeekerPLUS" DisplayName="HTIRSeeker PLUS">
-      <Description><![CDATA[<p>Context help for PolyGroup <b>Third party test</b></p>]]></Description>
+      <Description><![CDATA[<p>Context help for PolyGroup <b>HTIRSeekerPLUS</b></p>]]></Description>
       <Parameter Name="Port" DisplayName="ポート" Link="page.html?Path=editor%2FPortSelector.html#Port">
         <Description><![CDATA[多くのプログラミング ブロックでは、 EV3ブロックのポート（A、B、C、D、1、2、3、および4）を選択する必要があります。ポート セレクターはこれらのブロックの最上部右隅にあります。]]></Description>
       </Parameter>

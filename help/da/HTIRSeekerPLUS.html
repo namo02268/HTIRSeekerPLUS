@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>HTIRSeeker PLUS Block</title>
+</head>
+<body BGCOLOR="FFFFFF">
+
+  <h1>HTIRSeeker PLUS</h1>
+  <p>
+The HTIRSeeker PLUS is an extended programming block for LEGO MINDSTORMS EV3.
+In addition to measuring “direction” and “strength (intensity)” like the original IRSeeker,
+this block also provides comparison and selection modes that can be used with Switch and Loop blocks.
+<br><br>
+For more details, please visit the <a href="https://github.com/namo02268/HTIRSeekerPLUS">GitHub repository</a>.
+</p>
+
+  <h2>Modes</h2>
+
+  <!-- Direction Measure Mode -->
+  <a name="Mode_Direction"></a>
+  <h3>Measure - AC/DC Direction</h3>
+  <p>
+Measures the direction of the infrared signal.
+It can detect the IR ball signal direction used in RoboCup Junior Soccer (A-mode / B-mode).
+</p>
+
+  <!-- Strength Measure Mode -->
+  <a name="Mode_Strength"></a>
+  <h3>Measure - AC/DC Strength</h3>
+  <p>
+Measures the strength (intensity) of the infrared signal.
+Useful for estimating the distance to the IR ball.
+</p>
+
+  <!-- Direction Select Mode -->
+  <a name="Mode_SelectDirection"></a>
+  <h3>Select - AC/DC Direction</h3>
+  <p>
+A direction selection mode for use with the Switch block.
+You can access this mode by selecting “HTIRSeekerPLUS” → “Measure” → “AC/DC Mode” → “Direction”.
+</p>
+
+  <!-- Strength Compare Mode -->
+  <a name="Mode_CompareStrength"></a>
+  <h3>Compare - AC/DC Strength</h3>
+  <p>
+Compares the detected infrared strength with a user-defined threshold using a comparison operator.
+The result is returned as TRUE or FALSE, and can be used in Switch, Loop, and Wait blocks.
+</p>
+
+</body>
+</html>
