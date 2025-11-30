@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
-  <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.0">
+  <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.1">
     <PolyGroup Name="HTIRSeekerPLUS" BlockFamily="Sensor">
       <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.4" />
 			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_HTIRSeekerPLUS_Direction.png" ValueDisplay="Identification_Direction.xml" Configuration="Identification_Direction.xml" ModeCanSpecifyProperties="True" />
@@ -20,7 +20,7 @@
       <Category Name="MeasureACMode">
         <Block>
           <Mode>MeasureACDirection</Mode>
-          <Reference Type="VILib" Name="MeasureACDirection.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSMeasureACDirection.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Direction" CompilerDirectives="Result"/>
           <PaletteInfo Weight="0.5" />
@@ -30,7 +30,7 @@
         </Block>
         <Block>
           <Mode>MeasureACStrength</Mode>
-          <Reference Type="VILib" Name="MeasureACStrength.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSMeasureACStrength.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Strength" />
           <BlockInterface>Measure</BlockInterface>
@@ -42,7 +42,7 @@
       <Category Name="MeasureDCMode">
         <Block>
           <Mode>MeasureDCDirection</Mode>
-          <Reference Type="VILib" Name="MeasureDCDirection.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSMeasureDCDirection.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Direction" CompilerDirectives="Result"/>
           <BlockInterface>Selector</BlockInterface>
@@ -51,7 +51,7 @@
         </Block>
         <Block>
           <Mode>MeasureDCStrength</Mode>
-          <Reference Type="VILib" Name="MeasureDCStrength.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSMeasureDCStrength.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Strength" />
           <BlockInterface>Measure</BlockInterface>
@@ -63,7 +63,7 @@
       <Category Name="CompareACMode">
         <Block>
           <Mode>CompareACStrength</Mode>
-          <Reference Type="VILib" Name="CompareACStrength.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSCompareACStrength.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Comparison" />
           <ParameterReference Name="Threshold" />
@@ -78,7 +78,7 @@
       <Category Name="CompareDCMode">
         <Block>
           <Mode>CompareDCStrength</Mode>
-          <Reference Type="VILib" Name="CompareDCStrength.vix" />
+          <Reference Type="VILib" Name="HTIRSeekerPLUSCompareDCStrength.vix" />
           <ParameterReference Name="Port" />
           <ParameterReference Name="Comparison" />
           <ParameterReference Name="Threshold" />
