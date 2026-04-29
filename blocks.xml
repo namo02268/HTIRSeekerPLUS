@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
-  <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.1">
+  <PolyGroups ModuleName="HTIRSeekerPLUS" ModuleVersion="1.0.2">
     <PolyGroup Name="HTIRSeekerPLUS" BlockFamily="Sensor">
       <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.4" />
 			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_HTIRSeekerPLUS_Direction.png" ValueDisplay="Identification_Direction.xml" Configuration="Identification_Direction.xml" ModeCanSpecifyProperties="True" />
